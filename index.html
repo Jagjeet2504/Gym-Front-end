@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fitness Star Gym</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="main.js" />
+  </head>
+  <body>
+    <!-- navigation bar -->
+
+    <nav class="navbar">
+      <div class="logo-left">
+        <img src="img/fitness logo.png" alt="logo" />
+      </div>
+      <div class="right">
+        <ul class="nav-list">
+          <li class="hideonmobile"><a href="index.html">Home</a></li>
+          <li class="hideonmobile"><a href="classes.html">Classes</a></li>
+          <li class="hideonmobile"><a href="products.html">Products</a></li>
+          <li class="hideonmobile"><a href="blog.html">Blogs</a></li>
+          <div class="Join-btn hideonmobile">
+            <button id="join-btna">Join Us</button>
+          </div>
+          <li class="menu-button" onclick="showSidebar()">
+            <a href="#"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="icon icon-tabler icon-tabler-menu-2"
+                width="30"
+                height="30"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="#000000"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path d="M4 6l16 0" />
+                <path d="M4 12l16 0" />
+                <path d="M4 18l16 0" />
+              </svg>
+            </a>
+          </li>
+        </ul>
+
+        <ul class="sidebar">
+          <li onclick="hideSidebar()">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="icon icon-tabler icon-tabler-x"
+              width="40"
+              height="40"
+              viewBox="0 0 24 24"
+              stroke-width="1.0"
+              stroke="#fff"
+              fill="none"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path d="M18 6l-12 12" />
+              <path d="M6 6l12 12" />
+            </svg>
+          </li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="classes.html">Classes</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="blog.html">Blogs</a></li>
+          <div class="Join-btn">
+            <button id="join-btna">Join Us</button>
+          </div>
+        </ul>
+
+        <!-- <div class="hamburger">
+          <span>ggiugiu</span>
+          <span>jkhkjhuk</span>
+          <span>nkjhhk</span>
+        </div> -->
+      </div>
+    </nav>
+
+    <!-- section 2 Background Images -->
+
+    <section class="container-2">
+      <div class="title-container">
+        <p class="title">Revitalize your body</p>
+        <p class="subtitle">
+          Fall in love with taking care of yourself: <br />
+          mind, body, and spirit.
+        </p>
+      </div>
+      <div class="btn-container">
+        <button class="btn-1">Get Started</button>
+        <button class="btn-2">
+          Free Trial
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="icon icon-tabler icon-tabler-arrow-right"
+            width="40"
+            height="40"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="#ffffff"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path d="M5 12l14 0" />
+            <path d="M13 18l6 -6" />
+            <path d="M13 6l6 6" />
+          </svg>
+        </button>
+      </div>
+    </section>
+    <section class="social-container">
+      <div>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="icon icon-tabler icon-tabler-brand-whatsapp"
+          width="32"
+          height="32"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="#000000"
+          fill="none"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+          <path d="M3 21l1.65 -3.8a9 9 0 1 1 3.4 2.9l-5.05 .9" />
+          <path
+            d="M9 10a.5 .5 0 0 0 1 0v-1a.5 .5 0 0 0 -1 0v1a5 5 0 0 0 5 5h1a.5 .5 0 0 0 0 -1h-1a.5 .5 0 0 0 0 1"
+          />
+        </svg>
+      </div>
+      <div>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="icon icon-tabler icon-tabler-brand-facebook"
+          width="32"
+          height="32"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="#000000"
+          fill="none"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+          <path
+            d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3"
+          />
+        </svg>
+      </div>
+      <div>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="icon icon-tabler icon-tabler-brand-youtube-filled"
+          width="32"
+          height="32"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="#000000"
+          fill="none"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+          <path
+            d="M18 3a5 5 0 0 1 5 5v8a5 5 0 0 1 -5 5h-12a5 5 0 0 1 -5 -5v-8a5 5 0 0 1 5 -5zm-9 6v6a1 1 0 0 0 1.514 .857l5 -3a1 1 0 0 0 0 -1.714l-5 -3a1 1 0 0 0 -1.514 .857z"
+            stroke-width="0"
+            fill="currentColor"
+          />
+        </svg>
+      </div>
+    </section>
+    <!-- section 3 starts here -->
+
+    <section class="container-3">
+      <div class="row-1">
+        <div class="col-1">
+          <img src="./img/weight-removebg-preview.png" alt="Weight Loss" />
+          <p>Weight Loss</p>
+        </div>
+        <div class="col-2">
+          <img src="./img/yoga1-removebg-preview.png" alt="Classic Yoga" />
+          <p>Classic Yoga</p>
+        </div>
+        <div class="col-3">
+          <img src="./img/cycle-removebg-preview.png" alt="Cycling" />
+          <p>Cycling</p>
+        </div>
+      </div>
+      <div class="row-2">
+        <div class="col-4">
+          <img src="./img/body_build-removebg-preview.png" alt="Bodybuilding" />
+          <p>Bodybuilding</p>
+        </div>
+        <div class="col-5">
+          <img src="./img/images-removebg-preview (2).png" alt="Hypertrophy" />
+          <p>Hypertrophy</p>
+        </div>
+        <div class="col-6">
+          <img src="./img/run-removebg-preview.png" alt="Running" />
+          <p>Running</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- section 4 subsciption plans -->
+
+    <section class="container-4">
+      <div class="subscription-plan">
+        <p>Subscription Plans</p>
+      </div>
+      <div class="plans">
+        <div class="box">
+          <div class="price">
+            <p class="p1">Basic</p>
+            <p class="p2">for 12 months</p>
+          </div>
+          <div class="price">
+            <p class="p1">800/month</p>
+            <p class="p2">for streaming</p>
+          </div>
+          <button class="btn-price">Select Plan</button>
+        </div>
+        <div class="box">
+          <div class="price">
+            <p class="p1">Intermediate</p>
+            <p class="p2">for 12 months</p>
+          </div>
+          <div class="price">
+            <p class="p1">1000/month</p>
+            <p class="p2">for streaming</p>
+          </div>
+          <button class="btn-price">Select Plan</button>
+        </div>
+
+        <div class="box">
+          <div class="price">
+            <p class="p1">Advanced</p>
+            <p class="p2">for 12 months</p>
+          </div>
+          <div class="price">
+            <p class="p1">1500/month</p>
+            <p class="p2">for streaming</p>
+          </div>
+          <button class="btn-price">Select Plan</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Fitness club section -->
+
+    <section>
+      <div class="container-5-1"></div>
+      <div class="container-5-3">
+        <div class="container-5-3-box">
+          <img src="/img/gm.png" height="130px" width="130px" />
+          <p class="container-5-3-box-title">Good Management</p>
+          <p class="container-5-3-box-subtitle">
+            What hurts today makes you stronger tomorrow
+          </p>
+        </div>
+        <div class="container-5-3-box">
+          <img src="/img/gm.png" height="130px" width="130px" />
+          <p class="container-5-3-box-title">Practice Sessions</p>
+          <p class="container-5-3-box-subtitle">
+            Motivation is what gets you started.
+          </p>
+        </div>
+        <div class="container-5-3-box">
+          <img src="/img/ft2.png" height="130px" width="130px" />
+          <p class="container-5-3-box-title">Personal Trainers</p>
+          <p class="container-5-3-box-subtitle">
+            If it doesn't challenge you, it won't change you
+          </p>
+        </div>
+      </div>
+      <div class="container-5-2"></div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="container-6">
+      <div class="container-6-box">
+        <img src="/img/img2.jpg" height="350px" width="250px" />
+        <p>Best place for body transformation</p>
+      </div>
+      <div class="container-6-box">
+        <img src="/img/img5.jpg" height="350px" width="250px" />
+        <p>Best Cross Fit gym in this area</p>
+      </div>
+      <div class="container-6-box">
+        <img src="/img/img6.jpg" height="350px" width="250px" />
+        <p>
+          Best Bodybuilding gym in this city <br />
+          it has all required equipment
+        </p>
+      </div>
+    </section>
+
+    <!-- Footer Section -->
+
+    <footer class="footer">
+      <div class="footer-container1">
+        <div class="footer-container1-box">
+          <img src="img/fitness logo.png" width="50%" height="20%" />
+          <p class="tagline">
+            Prioritize Your Fitness Goals <br />with our world class services
+          </p>
+        </div>
+        <div class="footer-container1-box-2">
+          <div class="footer-company">
+            <p class="p1">COMPANY</p>
+            <p class="p2">About</p>
+            <p class="p2">Career</p>
+            <p class="p2">blog</p>
+          </div>
+          <div class="footer-company">
+            <p class="p1">CONTACT</p>
+            <p class="p2">Help/FAQs</p>
+            <p class="p2">Press</p>
+            <p class="p2">Mobile</p>
+          </div>
+          <div class="footer-company">
+            <p class="p1">MORE</p>
+            <p class="p2">Program</p>
+            <p class="p2">Plan</p>
+            <p class="p2">Method</p>
+          </div>
+        </div>
+
+        <div class="footer-container1-box-3">
+          <div class="footer-tag">
+            <p class="footer-tag-title">Popular Tags</p>
+          </div>
+          <div class="tag-container">
+            <p class="tag1">ABS</p>
+            <p class="tag1">Workout</p>
+          </div>
+          <div class="tag-container">
+            <p class="tag2">Nutrition</p>
+            <p class="tag1">Gym</p>
+          </div>
+          <div class="tag-container">
+            <p class="tag1">Boxing</p>
+            <p class="tag2">Trainers</p>
+          </div>
+          <div class="tag-container">
+            <p class="tag2">Facilities</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- copy right -->
+      <div class="footer-container2">
+        <p>CopyRight All Rights Reserved</p>
+      </div>
+    </footer>
+
+    <!-- popup form -->
+    <div class="popup" id="popup-form">
+      <div class="popup-title">
+        <p>Subscription Plan</p>
+      </div>
+      <form>
+        <div class="form-container">
+          <div class="label-container">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required />
+          </div>
+          <div class="label-container">
+            <label for="Email">Email:</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+
+          <div class="label-container">
+            <label for="mobile">Mobile Number</label>
+            <input
+              type="tel"
+              id="mobile"
+              name="mobile"
+              pattern="[0-9]{10}"
+              required
+            />
+          </div>
+
+          <div class="label-container">
+            <label for="mobile">Duration:</label>
+            <div class="radio-button-container">
+              <div class="radio-button1">
+                <input
+                  type="radio"
+                  id="monthly"
+                  name="subscriptionType"
+                  value="monthly"
+                  required
+                />
+                <label for="monthly">Monthly</label>
+              </div>
+              <div class="radio-button1">
+                <input
+                  type="radio"
+                  id="monthly"
+                  name="subscriptionType"
+                  value="yearly"
+                />
+                <label for="yearly">Yearly</label>
+              </div>
+            </div>
+          </div>
+
+          <div class="label-container">
+            <label for="mobile">Mode Of Payment:</label>
+            <div class="radio-button-container">
+              <div class="radio-button1">
+                <input
+                  type="radio"
+                  id="cash"
+                  name="paymentMethod"
+                  value="Cash"
+                  required
+                />
+                <label for="cash">Cash</label>
+              </div>
+              <div class="radio-button1">
+                <input
+                  type="radio"
+                  id="online"
+                  name="paymentMethod"
+                  value="Online"
+                  required
+                />
+                <label for="online">Online</label>
+              </div>
+            </div>
+          </div>
+
+          <div class="label-container">
+            <label for="mobile"
+              >Personal Training: <span>*free with yearly plan</span></label
+            >
+            <div class="radio-button-container">
+              <div class="radio-button1">
+                <input
+                  type="radio"
+                  id="required"
+                  name="isTrainerRequired"
+                  value="Yes"
+                  required
+                />
+                <label for="Yes">Required</label>
+              </div>
+              <div class="radio-button1">
+                <input
+                  type="radio"
+                  id="notRequired"
+                  name="isTrainerRequired"
+                  value="No"
+                  required
+                />
+                <label for="No">Not Required</label>
+              </div>
+            </div>
+          </div>
+
+          <div class="label-container">
+            <div class="checkbox">
+              <input
+                type="checkbox"
+                id="terms"
+                name="terms"
+                value="IAgree"
+                required
+              />
+              <label for="terms">I agree to the terms and conditions</label>
+            </div>
+          </div>
+
+          <div class="button-container">
+            <button type="submit" class="button-container-1">Submit</button>
+            <button type="submit" class="button-container-2">Cancel</button>
+          </div>
+        </div>
+      </form>
+    </div>
+    -->
+
+    <!-- Pop Up form Script -->
+    <script>
+      document
+        .getElementById("join-btna")
+        .addEventListener("click", function () {
+          document.getElementById("popup-form").style.display = "block";
+        });
+
+      document
+        .querySelector("form")
+        .addEventListener("submit", function (event) {
+          event.preventDefault();
+
+          const formData = new FormData(this);
+          const formValues = Object.fromEntries(formData.entries());
+
+          // Log form data to the console
+          console.log("Form Data:", formValues);
+
+          // Display alert for submission
+          alert("Form submitted successfully!");
+
+          // Close the form
+          document.getElementById("popup-form").style.display = "none";
+        });
+
+      document
+        .querySelector(".button-container-2")
+        .addEventListener("click", function () {
+          // Close the form
+          document.getElementById("popup-form").style.display = "none";
+        });
+    </script>
+
+    <!-- hamburger script -->
+
+    <script>
+      function showSidebar() {
+        const sidebar = document.querySelector(".sidebar");
+        sidebar.style.display = "flex";
+      }
+
+      function hideSidebar() {
+        const sidebar = document.querySelector(".sidebar");
+        sidebar.style.display = "none";
+      }
+    </script>
+  </body>
+</html>
